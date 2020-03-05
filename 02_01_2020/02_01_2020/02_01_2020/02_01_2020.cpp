@@ -1,4 +1,70 @@
-﻿#include <iostream> // ввод-вывод
+﻿
+// Дано трехзначное число. Вывести вначале его последнюю цифру (единицы), а затем — его среднюю цифру (десятки).
+
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+	int number;
+	cin >> number;
+	cout << "последняя цифра числа" << number % 10 << "средняя цифра числа" << number / 10 % 10;
+	return 0;
+}
+
+
+//	Даны две переменные целого типа: A и B. Если их значения не равны, то присвоить каждой переменной большее из этих значений, а если равны, то присвоить переменным нулевые значения.
+// Вывести новые значения переменных A и B.
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int A,B;
+    cin >> A >> B; 
+ 
+    if (A = B)
+        A == 0;
+        B == 0;
+    if (A > B) 
+		B == A;
+	else if (A < B)
+		A == B;
+		cout << "A = " << a << "B = " << B << endl;
+ 
+    return 0;
+     }
+ 
+      
+ 
+// Даны два целых числа А и В(А < B). Найти сумму всех целых чисел от А до В включительно.
+
+#include <iostream> 
+
+using namespace std;
+int main();
+
+{
+	int A,B;
+	cin >> A >> B;
+	for (int i = A, A <= B, i++)
+	{
+	sum = sum + i;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+#include <iostream> // ввод-вывод
 
 using namespace std;
 
@@ -61,3 +127,5 @@ void helloFunc()
 {
 	cout << "Hello, good world!!!" << endl;
 }
+
+
