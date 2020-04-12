@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Phonebook.cpp" />
-    <ClCompile Include="Phonebook1.0.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Subscriber.cpp" />
   </ItemGroup>
   <ItemGroup>

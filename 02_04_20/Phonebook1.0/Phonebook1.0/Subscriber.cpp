@@ -3,6 +3,8 @@
 
 using namespace std;
 
+Subscriber::Subscriber() { }
+
 Subscriber::Subscriber(char* name, int nameSize, char* number, int numberSize)
 {
 	this->name = new char[nameSize];
@@ -41,4 +43,21 @@ void Subscriber::getNumber()
 	{
 		cout << number[i];
 	}
+}
+
+void Subscriber::print()
+{
+	getName();
+	cout << "\t";
+	getNumber();
+}
+
+int Subscriber::getNameLength()
+{
+	return nameSize;
+}
+
+int Subscriber::getNumberLength()
+{
+	return numberSize;
 }
