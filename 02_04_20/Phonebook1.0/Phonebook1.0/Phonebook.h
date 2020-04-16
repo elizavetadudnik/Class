@@ -14,6 +14,8 @@ struct Phonebook
 	void printNumbers();
 
 private:
+	void readInfoFromFile();
+
 	Subscriber data[100];
-	int count = 0;
+	int count;
 };
