@@ -157,6 +157,9 @@
     <ClInclude Include="Phonebook2.0.h" />
     <ClInclude Include="Subscriber.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Phonebook.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

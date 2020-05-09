@@ -5,6 +5,13 @@
 
 using namespace std;
 
+//  онструктор по умолчанию.
+Subscriber::Subscriber()
+{
+	name = nullptr;
+	number = nullptr;
+}
+
 //  онструктор, устанавливает им€ и номер пользовател€.
 Subscriber::Subscriber(char* name, char* number)
 {

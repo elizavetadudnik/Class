@@ -2,13 +2,16 @@
 
 class Subscriber
 {
-	char* name = nullptr;
-	char* number = nullptr;
+	char* name;
+	char* number;
 
 	//  опирует значение из строки "str" в строку "destination".
 	void setStr(char* str, char** destination);
 
 public:
+	//  онструктор по умолчанию.
+	Subscriber();
+
 	//  онструктор, устанавливает им€ и номер пользователю.
 	Subscriber(char* name, char* number);
 

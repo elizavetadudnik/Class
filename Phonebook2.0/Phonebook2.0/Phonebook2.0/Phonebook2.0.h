@@ -1,18 +1,35 @@
 #pragma once
+#include "Subscriber.h"
 
 class Phonebook
 {
-	// ПОЛЯ ???
+	// Пользователи.
+	Subscriber* subscribers;
+
+	// Максимальное количество записей.
+	int const maxNumberOfNotes = 200;
+
+	// Количество пользователей.
+	int countSubscribers;
+
+	// Заполняет массив пользователей из файла.
+	void fillArrayFromFile();
 
 public:
-	// Печатает все записи из файла.
+	// Конструктор.
+	Phonebook();
+
+	// Деструктор.
+	~Phonebook();
+
+	// Печатает все записи из массива пользователей.
 	void printAllNotes();
 
 	// Найти номера по имени (подстроке).
-	void findNumbersByName();
+	void findNumbersByName(char* name);
 
 	// Найти имена по номеру (подстроке).
-	void findNamesByNumber();
+	void findNamesByNumber(char* number);
 
 	// Добавить запись.
 	void addNote(Subscriber* s);
@@ -22,5 +39,4 @@ public:
 
 	// Отсортировать по именам в алфавитном порядке.
 	void sort();
-
 };
